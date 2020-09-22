@@ -1,4 +1,5 @@
 require 'sinatra'
+require_relative './lib/bookmarks.rb'
 
 class Book_Marks < Sinatra::Base
 
@@ -8,6 +9,11 @@ class Book_Marks < Sinatra::Base
 
   get '/index' do
     'www.google.com'
-end
+  end
+
+  get '/bookmarks' do
+    @bookmarks = Bookmarks.all
+    erb(:bookmarks)
+  end
 
 end

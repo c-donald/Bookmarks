@@ -11,4 +11,13 @@ end
       expect(page).to have_content("www.google.com")
     end
 
+    feature 'Shows the viewings of bookmarks' do
+      scenario 'shows a list of bookmarks' do
+        visit '/bookmarks'
+        expect(page).to have_content("www.google.com")
+        expect(page).to have_content("www.github.com")
+        expect(page).to have_content("www.apple.com")
+      end
+    end
+
 end
