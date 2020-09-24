@@ -29,4 +29,15 @@ end
       end
     end
 
+    feature "it displays a title" do
+      scenario "adding and viewing a url title" do
+        visit"/bookmarks"
+        click_on('add new bookmark')
+        fill_in 'url', with:('www.youtube.com')
+        fill_in 'title', with:('Youtube')
+        click_on('Submit')
+        expect(page).to have_content "Youtube"
+        expect(page).not_to have_content "www.youtube.com"
+      end
+    end
 end

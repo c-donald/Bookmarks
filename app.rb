@@ -22,7 +22,8 @@ class Book_Marks < Sinatra::Base
 
   post '/bookmarks/new' do
    #add to the database
-   Bookmarks.add(params[:url])
+   Bookmarks.add(params[:url], params[:title])
+
   redirect ('/bookmarks')
   end
 end
