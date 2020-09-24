@@ -16,4 +16,13 @@ class Book_Marks < Sinatra::Base
     erb(:bookmarks)
   end
 
+  get '/bookmarks/new' do
+  erb(:add)
+  end
+
+  post '/bookmarks/new' do
+   #add to the database
+   Bookmarks.add(params[:url])
+  redirect ('/bookmarks')
+  end
 end

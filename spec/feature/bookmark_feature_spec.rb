@@ -21,9 +21,12 @@ end
     end
     feature "adding bookmarks" do
       scenario " I can add bookmarks to my db" do 
-        #adds something
+        visit '/bookmarks'
+        click_on('add new bookmark')
+        fill_in 'url', with:('www.youtube.com')
+        click_on('Submit')
+        expect(page).to have_content("www.youtube.com")
       end
     end
-
 
 end
