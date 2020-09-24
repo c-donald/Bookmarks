@@ -3,14 +3,19 @@ require 'simplecov-console'
 SimpleCov.start
 SimpleCov.formatter = SimpleCov::Formatter::Console
 
+ENV['ENVIRONMENT'] = "test"
+require_relative './web-helpers'
 
 RSpec.configure do |config|
-  
+  config.before(:each) do
+    setup_test_env
+  end
   ENV['RACK_ENV'] = 'test'
   require_relative '../app.rb'
   require 'capybara'
   require 'capybara/rspec'
   require 'rspec'
+  
 
   Capybara.app = Book_Marks
 

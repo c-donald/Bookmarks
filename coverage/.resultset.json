@@ -1,7 +1,18 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/Projects/week-4/Bookmarks/app.rb": {
+      "/Users/nicolakeys/Makers/Projects/courteny-bookmarks/Bookmarks/spec/web-helpers.rb": {
+        "lines": [
+          1,
+          5,
+          5,
+          5,
+          5,
+          5,
+          null
+        ]
+      },
+      "/Users/nicolakeys/Makers/Projects/courteny-bookmarks/Bookmarks/app.rb": {
         "lines": [
           1,
           1,
@@ -24,19 +35,35 @@
           null
         ]
       },
-      "/Users/student/Projects/week-4/Bookmarks/lib/bookmarks.rb": {
+      "/Users/nicolakeys/Makers/Projects/courteny-bookmarks/Bookmarks/lib/bookmarks.rb": {
         "lines": [
+          1,
           null,
           1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          2,
+          6,
+          null,
+          null,
           null,
           1,
           2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/student/Projects/week-4/Bookmarks/spec/bookmarks_spec.rb": {
+      "/Users/nicolakeys/Makers/Projects/courteny-bookmarks/Bookmarks/spec/bookmarks_spec.rb": {
         "lines": [
           1,
           null,
@@ -47,7 +74,7 @@
           null
         ]
       },
-      "/Users/student/Projects/week-4/Bookmarks/spec/feature/bookmark_feature_spec.rb": {
+      "/Users/nicolakeys/Makers/Projects/courteny-bookmarks/Bookmarks/spec/feature/bookmark_feature_spec.rb": {
         "lines": [
           1,
           1,
@@ -68,6 +95,12 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -75,6 +108,6 @@
         ]
       }
     },
-    "timestamp": 1600942519
+    "timestamp": 1600958606
   }
 }
